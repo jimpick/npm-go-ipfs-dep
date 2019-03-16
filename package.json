@@ -1,27 +1,17 @@
 {
-  "name": "go-ipfs-dep",
-  "version": "0.4.19",
-  "description": "Install the latest go-ipfs binary",
-  "main": "src/index.js",
+  "name": "@jimpick/go-ipfs-dep",
+  "version": "0.4.19-1",
+  "description": "Install custom go-ipfs binary",
   "engines": {
     "node": ">=6.0.0",
     "npm": ">=3.0.0"
   },
   "scripts": {
-    "install": "node src/bin.js",
-    "test": "tape test/*.js | tap-spec",
-    "lint": "standard"
+    "install": "node src/install.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ipfs/npm-go-ipfs-dep.git"
-  },
-  "dependencies": {
-    "go-platform": "^1.0.0",
-    "gunzip-maybe": "^1.4.1",
-    "node-fetch": "^2.3.0",
-    "tar-fs": "^2.0.0",
-    "unzip-stream": "^0.3.0"
+    "url": "git+https://github.com/jimpick/npm-go-ipfs-dep.git"
   },
   "keywords": [
     "ipfs",
@@ -33,13 +23,6 @@
     "url": "https://github.com/ipfs/npm-go-ipfs-dep/issues"
   },
   "homepage": "https://github.com/ipfs/npm-go-ipfs-dep",
-  "devDependencies": {
-    "aegir": "^18.2.0",
-    "rimraf": "^2.6.2",
-    "standard": "^12.0.1",
-    "tap-spec": "^5.0.0",
-    "tape": "^4.9.1"
-  },
   "contributors": [
     "Alan Shaw <alan.shaw@protocol.ai>",
     "Alex Potsides <alex@achingbrain.net>",
@@ -52,5 +35,10 @@
     "Scott Hardy <scott.the.hardy@gmail.com>",
     "Stephen Whitmore <stephen.whitmore@gmail.com>",
     "haad <haad@headbanggames.com>"
-  ]
+  ],
+  "dependencies": {
+    "go-platform": "^1.0.0",
+    "goenv": "^1.1.4",
+    "rimraf": "^2.6.3"
+  }
 }

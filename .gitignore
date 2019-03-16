@@ -3,7 +3,6 @@ yarn.lock
 
 node_modules
 *.log
-go-ipfs
 .vscode
 docs
 
@@ -12,3 +11,4 @@ coverage
 
 # Sublime files
 *sublime*
+go-ipfs/ipfs
