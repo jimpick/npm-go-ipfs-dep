@@ -1,6 +1,6 @@
 {
   "name": "@jimpick/go-ipfs-dep",
-  "version": "0.4.19-1",
+  "version": "0.4.19-2",
   "description": "Install custom go-ipfs binary",
   "engines": {
     "node": ">=6.0.0",
